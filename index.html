@@ -5,14 +5,25 @@
     </head>
 
     <body>
+        <div class="header">
+            <h1> <span class="black-font">BLACK</span>JACK 🂱 🃞 </h1>
+            <button id="start-btn" onclick="startGame()">START GAME</button>
+
+        </div>
+
+        <div class="dealers-mat">
+            <h3>Dealer's Hand</h3>
+            <p id="dealers-cards-display"></p>
+            <p class="sum-view" id="dealers-sum-display"></p>
+        </div>
         <div class="play-mat">
-            <h1>🂱 🃞</h1>
-            <h1>Let's play Blackjack </h1>
+
             <h3 id="play-message">Click START GAME to play</h3>
             <p id="cards-display">Cards:&nbsp;</p>
-            <p id="sum-display">Sum:&nbsp; </p> 
-            <button id="start-btn" onclick="startGame()">START GAME</button>
+            <p class="sum-view" id="sum-display">Sum:&nbsp; </p> 
+            
             <button id="tap-btn" onclick="dealCard()">GIVE ME ANOTHER</button>
+            <button id="stay-btn" onclick="showDealer()">STAY</button>
 
          </div>
 
