@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
@@ -11,21 +12,25 @@
 
         </div>
 
-        <div class="dealers-mat">
-            <h3>Dealer's Hand</h3>
-            <p id="dealers-cards-display"></p>
-            <p class="sum-view" id="dealers-sum-display"></p>
+        <div class="playing-area">
+
+            <div class="dealers-mat">
+                <h3>Dealer's Hand</h3>
+                <p id="dealers-cards-display"></p>
+                <p class="sum-view" id="dealers-sum-display"></p>
+            </div>
+            <div class="play-mat">
+
+                <h3 id="play-message">Click START GAME to play</h3>
+                <p id="cards-display">Cards:&nbsp;</p>
+                <p class="sum-view" id="sum-display">Sum:&nbsp; </p> 
+                
+                <button id="tap-btn" onclick="dealCard()">HIT</button>
+                <button id="stay-btn" onclick="showDealer()">STAND</button>
+
+            </div>
+
         </div>
-        <div class="play-mat">
-
-            <h3 id="play-message">Click START GAME to play</h3>
-            <p id="cards-display">Cards:&nbsp;</p>
-            <p class="sum-view" id="sum-display">Sum:&nbsp; </p> 
-            
-            <button id="tap-btn" onclick="dealCard()">GIVE ME ANOTHER</button>
-            <button id="stay-btn" onclick="showDealer()">STAY</button>
-
-         </div>
 
          <script src="index.js"></script>
     </body>

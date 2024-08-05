@@ -3,7 +3,7 @@ let secondNumber = 0
 let cards = []
 let sum = 0
 
-let isAlive = true
+let isAlive = false
 let isBlackJack = false
 let isStay = false
 let dealerGo = true
@@ -76,10 +76,11 @@ function renderGame() {
 
     } else if (sum < 21) {
         playMessage.textContent = "What do you want to do?"
+        isAlive = true
         
     } else {
         playMessage.textContent = "Sorry, bust. Try again."
-        isAlive = false
+        
     }
 
     
